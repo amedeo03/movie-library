@@ -38,8 +38,8 @@ export class MovieLibrary {
         });
     }
 
-    removeMovie() {
-        
+    removeMovie(movieId) {
+        this.movies = this.movies.filter(movie => movie.id !== movieId);
     }
 
 }

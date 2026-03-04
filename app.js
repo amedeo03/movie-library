@@ -9,7 +9,7 @@ const movie4 = new Movie(4, "Shrek", true, "2026-03-02", null, 3);
 
 
 const library = new MovieLibrary([movie1, movie2, movie3]);
+
 library.addMovie(movie4);
-
-library.printMovies()
-
+library.removeMovie(2);
+library.printMovies();
